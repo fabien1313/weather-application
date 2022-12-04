@@ -145,7 +145,8 @@ hr {
 #five-day-forecast {
     display: flex;
     flex-wrap: wrap;
-
+    width: 1320px;
+    justify-content: space-between;
 }
 
 #cities {
@@ -158,13 +159,9 @@ hr {
     margin-right: 60px;
     background-color: var(--box-color);
     box-shadow: 2px 5px 3px 0px;
+    max-height: 400px;
 }
 
-#five-day-forecast {
-    width: 1320px;
-    justify-content: space-between;
-
-}
 
 .five-day-boxes {
     margin-top: 20px;
@@ -176,6 +173,7 @@ hr {
     height: 200px;
     background-color: var(--box-color);
     box-shadow: 1px 1px 10px 1px;
+    flex-grow: 4;
 }
 
 .main-dates {
@@ -252,4 +250,72 @@ footer {
 
 #time {
     text-align: center;
+}
+
+
+@media only screen and (max-width: 841px){
+    .five-day-boxes{
+        width:150px;
+        height: 120px;
+        margin-top: 10px;
+        
+    }
+
+    #right-side{
+        width:660px;
+        height:150px;
+
+    }
+
+    #left-side{
+        width:162px;
+    }
+
+    #text-box{
+        width:145px;
+        height: 12px;
+    }
+
+    #search-btn{
+        width: 150px;
+        
+    }
+
+    hr{
+        width: 150px;
+    }
+    #city-selection-1{
+        width: 150px;
+        
+    }
+    #city-selection-2{
+        width: 150px;
+    }
+    #city-selection-3{
+        width: 150px;
+    }
+    #city-selection-4{
+        width: 150px;
+    }
+    #city-selection-5{
+        width: 150px;
+    }
+    #city-selection-6{
+        width: 150px;
+    }
+    #city-selection-7{
+        width: 150px;
+    }
+    #city-selection-8{
+        width: 150px;
+    }
+    #reset{
+        width: 150px;
+    }
+    .main-dates{
+        margin-bottom: 20px;
+    }
+    #location{
+        margin-bottom: 35px;
+    }
 }
