@@ -196,126 +196,96 @@ footer {
     margin-top: 180px;
 }
 
+/* Hover effects: */
+
 #search-btn:hover {
     border: 2px solid white;
     font-size: 18px;
 }
-
 #reset:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
-
 #city-selection-1:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
 #city-selection-2:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
 #city-selection-3:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
 #city-selection-4:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
 #city-selection-5:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
 #city-selection-6:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
 #city-selection-7:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
 #city-selection-8:hover {
     border: 2px solid white;
     font-size: 20px;
-
 }
+
+/* End of Hovers */
 
 #time {
     text-align: center;
 }
 
+/* Responiveness */
 
 @media only screen and (max-width: 841px){
     .five-day-boxes{
         width:150px;
         height: 120px;
-        margin-top: 10px;
-        
+        margin-top: 10px; 
     }
-
     #right-side{
         width:660px;
         height:150px;
-
     }
-
     #left-side{
         width:162px;
     }
-
     #text-box{
         width:145px;
-        height: 12px;
+        height: 15px;
     }
-
-    #search-btn{
-        width: 150px;
-        
-    }
-
-    hr{
-        width: 150px;
-    }
-    #city-selection-1{
-        width: 150px;
-        
-    }
-    #city-selection-2{
-        width: 150px;
-    }
-    #city-selection-3{
-        width: 150px;
-    }
-    #city-selection-4{
-        width: 150px;
-    }
-    #city-selection-5{
-        width: 150px;
-    }
-    #city-selection-6{
-        width: 150px;
-    }
-    #city-selection-7{
-        width: 150px;
-    }
-    #city-selection-8{
-        width: 150px;
-    }
-    #reset{
-        width: 150px;
+    #search-btn, #city-selection-1, #city-selection-2, #city-selection-3, #city-selection-4,
+    #city-selection-5, #city-selection-6, #city-selection-7, #city-selection-8, #reset, hr
+     {
+        width: 150px;   
     }
     .main-dates{
         margin-bottom: 20px;
     }
     #location{
         margin-bottom: 35px;
+    }
+    footer{
+        margin-top: 40px;
+    }
+    header{
+        height: 50px; 
+    }
+    h1{
+        margin:0;
+        font-size:20px;
+    }
+    #time{
+        font-size: 12px;
     }
 }
