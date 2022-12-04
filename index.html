@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css%22/%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -15,57 +22,96 @@
     <header>
         <div id="heading">
             <h1>Weather Dashboard</h1>
+            <p id="time"></p>
         </div>
     </header>
     <!-- Header -->
 
+    <!-- Photo by Clément Falize on Unsplash (background) -->
     <main>
         <div>
-         <div id="aside">
-            <div id="search-text-box">
-                <h2>Search for a City:</h2>
+            <div id="flex-container">
+                <div id="left-side">
+                    <h2 id="search-text-box">Search for a City</h2>
+                    <br>
+                    <input type="text" name="" id="text-box" placeholder="Enter a city">
+                    <br><br>
+                    <button id="search-btn">Search</button>
+                    <hr>
+                    <div id="city-selection-1">Atlanta</div>
+                </div>
+                <div id="right-side">
+                    <p id="location">Atlanta (9/22/2022)</p>
+                    <p class="vert-stats">Temp: 76.62 F</p>
+                    <p class="vert-stats">Wind: 8.43 MPH</p>
+                    <p class="vert-stats">Humidity: 44 %</p>
+                </div>
             </div>
-            <div id="verticle-content">
-                <div>Atlanta</div>
+
+            <div id="flex-container-two">
+                <div id="cities">
+                    <div id="city-selection-2">Denver</div>
+
+                    <div id="city-selection-3">Seattle</div>
+
+                    <div id="city-selection-4">San Francisco</div>
+
+                    <div id="city-selection-5">Orlando</div>
+
+                    <div id="city-selection-6">New York</div>
+
+                    <div id="city-selection-7">Chicago</div>
+
+                    <div id="city-selection-8">Austin</div>
+                    <br><br>
+                    <div id="reset">Reset</div>
+                </div>
+
+                <div id="five-day-forecast">
+                    <div class="five-day-boxes">
+                        <p class="main-dates">9/14/2022</p>
+                        <p class="date-stats">Temp: 63.55 F</p>
+                        <p class="date-stats">Wind: 3.94 MPH</p>
+                        <p class="date-stats">Humidty</p>
+                    </div>
+                    <div class="five-day-boxes">
+                        <p class="main-dates">9/15/2022</p>
+                        <p class="date-stats">Temp: 63.55 F</p>
+                        <p class="date-stats">Wind: 3.94 MPH</p>
+                        <p class="date-stats">Humidty</p>
+                    </div>
+                    <div class="five-day-boxes">
+                        <p class="main-dates">9/16/2022</p>
+                        <p class="date-stats">Temp: 63.55 F</p>
+                        <p class="date-stats">Wind: 3.94 MPH</p>
+                        <p class="date-stats">Humidty</p>
+                    </div>
+                    <div class="five-day-boxes">
+                        <p class="main-dates">9/17/2022</p>
+                        <p class="date-stats">Temp: 63.55 F</p>
+                        <p class="date-stats">Wind: 3.94 MPH</p>
+                        <p class="date-stats">Humidty</p>
+                    </div>
+                    <div class="five-day-boxes">
+                        <p class="main-dates">9/18/2022</p>
+                        <p class="date-stats">Temp: 63.55 F</p>
+                        <p class="date-stats">Wind: 3.94 MPH</p>
+                        <p class="date-stats">Humidty</p>
+                    </div>
+                </div>
             </div>
-         </div>
-            <div id="input-text-box">
-                <input type="text" name="" id="text-box" placeholder="Texas">
-            </div>
-            <div id="search-btn-box">
-                <button id="search-btn">Search</button>
-            </div>
-            <div>
-                <hr>
-            </div>
-            <div>
-                <div id="city-selection-1">Atlanta</div>
-            </div>
-            <div>
-                <div id="city-selection-2">Denver</div>
-            </div>
-            <div>
-                <div id="city-selection-3">Seattle</div>
-            </div>
-            <div>
-                <div id="city-selection-4">San Francisco</div>
-            </div>
-            <div>
-                <div id="city-selection-5">Orlando</div>
-            </div>
-            <div>
-                <div id="city-selection-6">New York</div>
-            </div>
-            <div>
-                <div id="city-selection-7">Chicago</div>
-            </div>
-            <div>
-                <div id="city-selection-8">Austin</div>
-            </div>
-           
-                
         </div>
+
+        <footer>
+            <a href="https://github.com/fabien1313" target="_blank">
+                <div><span id="fabien" class="fab fa-github column links white"> Fabien</span></div>
+            </a>
+        </footer>
+
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    <script src="assets/script.js"> </script>
 </body>
 
 </html>

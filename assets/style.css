@@ -1,23 +1,43 @@
+* {
+    font-family: Raleway;
+}
+
+:root {
+    --box-color: #bca1ec9a;
+}
+
+body {
+    background-image: url(images/background.jpg);
+
+}
+
 header {
     display: flex;
-    background-color: blue;
-    color:white;
+    background-color: var(--box-color);
+    color: black;
     width: 100%;
     height: 100px;
+    box-shadow: 1px 1px 10px 1px;
+
+
 }
 
 #heading {
     flex-wrap: wrap;
-    margin: 0 auto; 
+    margin: 0 auto;
+
 }
 
 h1 {
     margin-top: 20px;
     font-size: 50px;
+
 }
 
 h2 {
-    font-size: 28px;
+    margin-top: 20px;
+    font-size: 22px;
+    color: black;
 }
 
 hr {
@@ -27,12 +47,14 @@ hr {
 }
 
 #text-box {
-    width: 300px;
+    width: 290px;
     height: 25px;
 }
 
-#search-btn-box, #input-text-box, #search-text-box {
-    margin-bottom: 20px;
+#search-btn,
+#text-box,
+#search-text-box {
+    margin-bottom: 5px;
     margin-left: 10px;
 
 }
@@ -40,29 +62,194 @@ hr {
 #search-btn {
     display: flex;
     width: 300px;
-    background-color: blue;
+    background-color: rgba(128, 0, 128, 0.547);
     border-radius: 5px;
-    border:none;
+    border: none;
     color: white;
-    height:25px;
+    height: 25px;
     justify-content: center;
+    box-shadow: 1px 1px 10px 1px;
+    font-size: 15px;
 }
 
-#city-selection-1, #city-selection-2, #city-selection-3, #city-selection-4, #city-selection-5, #city-selection-6,
-#city-selection-7, #city-selection-8
- {
+#city-selection-1,
+#city-selection-2,
+#city-selection-3,
+#city-selection-4,
+#city-selection-5,
+#city-selection-6,
+#city-selection-7,
+#city-selection-8,
+#reset {
     display: flex;
     background-color: lightgray;
     width: 300px;
-    height:25px;
+    height: 25px;
     border-radius: 5px;
     justify-content: center;
     line-height: 25px;
     margin-left: 10px;
     margin-bottom: 17px;
+    border: 1px solid rgba(128, 0, 128, 0.547);
+    box-shadow: 1px 1px 10px 1px;
 
 }
 
-aside {
-    
+#reset {
+    background-color: rgba(128, 0, 128, 0.547);
+    color: white;
+}
+
+#flex-container {
+    display: flex;
+
+}
+
+#left-side {
+    margin-top: 10px;
+    width: 325px;
+    margin-left: 10px;
+    margin-right: 60px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--box-color);
+    box-shadow: 1px 5px 5px 2px;
+
+}
+
+#right-side {
+    width: 1320px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--box-color);
+    box-shadow: 1px 1px 10px 1px;
+}
+
+#location {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 70px;
+}
+
+.vert-stats {
+    margin-bottom: 10px;
+}
+
+#flex-container-two {
+    display: flex;
+}
+
+#five-day-forecast {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#cities {
+    width: 325px;
+    margin-left: 10px;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 0px 0px 15px 15px;
+    margin-right: 60px;
+    background-color: var(--box-color);
+    box-shadow: 2px 5px 3px 0px;
+}
+
+#five-day-forecast {
+    width: 1320px;
+    justify-content: space-between;
+
+}
+
+.five-day-boxes {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 200px;
+    background-color: var(--box-color);
+    box-shadow: 1px 1px 10px 1px;
+}
+
+.main-dates {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+.date-stats {
+    margin-bottom: 10px;
+}
+
+#fabien {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+#search-btn:hover {
+    border: 2px solid white;
+    font-size: 18px;
+}
+
+#reset:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+
+#city-selection-1:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+#city-selection-2:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+#city-selection-3:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+#city-selection-4:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+#city-selection-5:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+#city-selection-6:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+#city-selection-7:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+#city-selection-8:hover {
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+
+#time {
+    text-align: center;
 }
