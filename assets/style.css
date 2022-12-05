@@ -96,7 +96,7 @@ hr {
 
 #weather-icon{
     position: relative;
-    bottom:30px;
+    bottom:50px;
 }
 #weather-icon1, #weather-icon2, #weather-icon3, #weather-icon4, #weather-icon5 {
     position:relative;
@@ -151,7 +151,7 @@ hr {
 .vert-stats {
     position: relative;
     margin-bottom: 10px;
-    bottom:35px;
+    bottom:40px;
     margin-left:10px;
 }
 
@@ -210,7 +210,7 @@ hr {
 #time {
     position: relative;
     top: 20px;
-    left:120px;
+    left:155px;
     font-weight: bold;
     font-size: 20px;
 }

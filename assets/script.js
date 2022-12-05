@@ -14,7 +14,7 @@ function getWeather(e) {
 
     var cityInput = document.querySelector('#city-input').value;
     var apiKey = '8f875c9f733a2d9482803fcd7422731c';
-    var apiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=';
+    var apiUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=';
     var apiRequestUrl = apiUrl + cityInput + '&limit=1' + '&appid=' + apiKey;
 
     fetch(apiRequestUrl)
