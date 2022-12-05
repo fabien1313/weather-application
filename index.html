@@ -21,7 +21,7 @@
     <header>
         <div id="heading">
             <h1>Weather Dashboard</h1>
-            <p id="time"></p>
+            <!-- <p id="time"></p> -->
         </div>
     </header>
     <!-- Header -->
@@ -33,69 +33,76 @@
                 <div id="left-side">
                     <h2 id="search-text-box">Search for a City</h2>
                     <br>
-                    <input type="text" name="" id="text-box" placeholder="Enter a city">
+                    <input type="text" name="" id="city-input" placeholder="Enter a city">
                     <br><br>
                     <button id="search-btn">Search</button>
                     <hr>
-                    <div class="city-btn" id="city-selection-1">Atlanta</div>
+                    <div class="city-btn" id="city-selection-1"></div>
                 </div>
                 <div id="right-side">
-                    <p id="location">Atlanta (9/22/2022)</p>
-                    <p class="vert-stats">Temp: 76.62 F</p>
-                    <p class="vert-stats">Wind: 8.43 MPH</p>
-                    <p class="vert-stats">Humidity: 44 %</p>
+                    <span id="time"></span>
+                    <p id="location"></p>
+                    <img id="weather-icon">
+                    <p id="current-temp" class="vert-stats">Temp:</p>
+                    <p id="current-wind" class="vert-stats">Wind:</p>
+                    <p id="current-humidity" class="vert-stats">Humidity:</p>
                 </div>
             </div>
 
             <div id="flex-container-two">
                 <div id="cities">
-                    <div class="city-btn" id="city-selection-2">Denver</div>
+                    <div class="city-btn" id="city-selection-2"></div>
 
-                    <div class="city-btn" id="city-selection-3">Seattle</div>
+                    <div class="city-btn" id="city-selection-3"></div>
 
-                    <div class="city-btn" id="city-selection-4">San Francisco</div>
+                    <div class="city-btn" id="city-selection-4"></div>
 
-                    <div class="city-btn" id="city-selection-5">Orlando</div>
+                    <div class="city-btn" id="city-selection-5"></div>
 
-                    <div class="city-btn" id="city-selection-6">New York</div>
+                    <div class="city-btn" id="city-selection-6"></div>
 
-                    <div class="city-btn" id="city-selection-7">Chicago</div>
+                    <div class="city-btn" id="city-selection-7"></div>
 
-                    <div class="city-btn" id="city-selection-8">Austin</div>
+                    <div class="city-btn" id="city-selection-8"></div>
                     <br><br>
                     <div class="city-btn" id="reset">Reset</div>
                 </div>
 
                 <div id="five-day-forecast">
                     <div class="five-day-boxes">
-                        <p class="main-dates">9/14/2022</p>
-                        <p class="date-stats">Temp: 63.55 F</p>
-                        <p class="date-stats">Wind: 3.94 MPH</p>
-                        <p class="date-stats">Humidty: sucks</p>
+                        <p  id="day1" class="main-dates"></p>
+                        <img id="weather-icon1">
+                        <p id="tempday1" class="date-stats">Temp:</p>
+                        <p  id="windday1" class="date-stats">Wind:</p>
+                        <p id="humday1" class="date-stats">Humidty:</p>
                     </div>
                     <div class="five-day-boxes">
-                        <p class="main-dates">9/15/2022</p>
-                        <p class="date-stats">Temp: 63.55 F</p>
-                        <p class="date-stats">Wind: 3.94 MPH</p>
-                        <p class="date-stats">Humidty: sucks</p>
+                        <p  id="day2" class="main-dates"></p>
+                        <img id="weather-icon2">
+                        <p id="tempday2" class="date-stats">Temp:</p>
+                        <p id="windday2" class="date-stats">Wind:</p>
+                        <p id="humday2" class="date-stats">Humidty:</p>
                     </div>
                     <div class="five-day-boxes">
-                        <p class="main-dates">9/16/2022</p>
-                        <p class="date-stats">Temp: 63.55 F</p>
-                        <p class="date-stats">Wind: 3.94 MPH</p>
-                        <p class="date-stats">Humidty: sucks</p>
+                        <p id="day3" class="main-dates"></p>
+                        <img id="weather-icon3">
+                        <p id="tempday3" class="date-stats">Temp:</p>
+                        <p id="windday3" class="date-stats">Wind:</p>
+                        <p id="humday3" class="date-stats">Humidty: sucks</p>
                     </div>
                     <div class="five-day-boxes">
-                        <p class="main-dates">9/17/2022</p>
-                        <p class="date-stats">Temp: 63.55 F</p>
-                        <p class="date-stats">Wind: 3.94 MPH</p>
-                        <p class="date-stats">Humidty: sucks</p>
+                        <p id="day4" class="main-dates"></p>
+                        <img id="weather-icon4">
+                        <p id="tempday4" class="date-stats">Temp: 63.55 F</p>
+                        <p id="windday4" class="date-stats">Wind: 3.94 MPH</p>
+                        <p id="humday4" class="date-stats">Humidty: sucks</p>
                     </div>
                     <div class="five-day-boxes">
-                        <p class="main-dates">9/18/2022</p>
-                        <p class="date-stats">Temp: 63.55 F</p>
-                        <p class="date-stats">Wind: 3.94 MPH</p>
-                        <p class="date-stats">Humidty: sucks</p>
+                        <p id="day5" class="main-dates"></p>
+                        <img id="weather-icon5">
+                        <p id="tempday5" class="date-stats">Temp: 63.55 F</p>
+                        <p id="windday5" class="date-stats">Wind: 3.94 MPH</p>
+                        <p id="humday5" class="date-stats">Humidty: sucks</p>
                     </div>
                 </div>
             </div>
@@ -108,6 +115,11 @@
         </footer>
 
     </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script>dayjs().format()</script>
     <script src="assets/script.js"> </script>
