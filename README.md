@@ -28,6 +28,8 @@ Deployed page: https://fabien1313.github.io/weather-application/
 
 ![](assets/images/web1.png)
 ![](assets/images/web2.png)
+![](assets/images/web3.png)
+![](assets/images/web4.png)
 
 
 
