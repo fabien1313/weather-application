@@ -24,7 +24,7 @@ The search input will save the previous cities you have searched for securing th
 - Background photo by https://unsplash.com/@centelm (Clement Falize)
 
 ## Screenshots (Deployable Page Link)
-Deployed page: 
+Deployed page: https://fabien1313.github.io/weather-application/ 
 
 ![](assets/images/web1.png)
 ![](assets/images/web2.png)
